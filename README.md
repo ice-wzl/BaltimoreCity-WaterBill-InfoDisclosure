@@ -8,10 +8,10 @@ https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack
 https://www.wbaltv.com/article/cyberattack-baltimore-city-public-schools-students-staff-cloak/64543595
 https://www.verizon.com/business/resources/articles/s/lessons-from-the-robbinhood-ransomware-attack-on-baltimore/
 
-City residences are forced to pay their water bill on a monthly basis manually, as there is no auto-pay option, dispite auto-pay being almost universal across America in 2025.
-Customers can look up their account information via service address or 11 digit account number. While there is a "create account option" It is not provided on the main page. Accessing an account via street address (any address, unauthenticated) will yield you the users 11 digit account number. Personally, I believe account numbers should be provided only to the individual that lives at the residence, as this opens the door to phishing attacks, OSINT.
-As you can see above, and below, I have accessed the account information for a residence in Baltimore City without authenticating, or providing proof that I am a resident at the aforementioned address. Keep in mind, the owners name is no where to be found on the "Water Bill Details" page. We will see a bit later that this is not entirely true.
-When analyzing the requests in Burp Suite, we can see the first request for the main page looks very standard
+- City residences are forced to pay their water bill on a monthly basis manually, as there is no auto-pay option, dispite auto-pay being almost universal across America in 2025.
+- Customers can look up their account information via service address or 11 digit account number. While there is a "create account option" It is not provided on the main page. Accessing an account via street address (any address, unauthenticated) will yield you the users 11 digit account number. Personally, I believe account numbers should be provided only to the individual that lives at the residence, as this opens the door to phishing attacks, OSINT.
+- As you can see above, and below, I have accessed the account information for a residence in Baltimore City without authenticating, or providing proof that I am a resident at the aforementioned address. Keep in mind, the owners name is no where to be found on the "Water Bill Details" page. We will see a bit later that this is not entirely true.
+- When analyzing the requests in Burp Suite, we can see the first request for the main page looks very standard
 ````
 GET /water HTTP/1.1
 Host: pay.baltimorecity.gov
